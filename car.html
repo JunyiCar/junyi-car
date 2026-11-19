@@ -664,7 +664,7 @@
                                 <div class="absolute bottom-5 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-end justify-between gap-2">
                                     <div class="min-w-0">
                                         <span class="bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-md uppercase">本月熱門精選</span>
-                                        <h3 class="text-base sm:text-xl font-bold text-white mt-1.5 truncate">${selectedHotCar.brand} ${selectedHotCar.name}</h3>
+                                        <h3 class="text-base sm:text-xl font-bold text-white mt-1.5 truncate">${selectedHotCar.name}</h3>
                                     </div>
                                     <span class="bg-slate-900/90 border border-slate-700 px-3 py-1 rounded-xl text-red-400 font-extrabold text-sm sm:text-lg whitespace-nowrap shrink-0">${selectedHotCar.price}</span>
                                 </div>
@@ -723,7 +723,7 @@
                             <span class="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-red-600 text-white font-black text-xs sm:text-sm px-3 py-1 rounded-xl shadow-md">${car.price}</span>
                         </div>
                         <div class="p-5 sm:p-6 space-y-3">
-                            <h3 class="text-base sm:text-xl font-bold text-slate-900 group-hover:text-red-600 transition-colors">${car.brand} ${car.name}</h3>
+                            <h3 class="text-base sm:text-xl font-bold text-slate-900 group-hover:text-red-600 transition-colors">${car.name}</h3>
                             <div class="flex items-center space-x-3 text-xs text-slate-700 font-bold">
                                 <span><i class="fa-solid fa-calendar text-red-600 mr-1"></i> ${car.year} 年</span>
                                 <span><i class="fa-solid fa-gauge text-red-600 mr-1"></i> ${car.mileage}</span>
@@ -829,7 +829,7 @@
             preloadCarPhotos(currentCarPhotos);
 
             document.getElementById('modalBrandBadge').textContent = car.brand;
-            document.getElementById('modalCarName').textContent = `${car.brand} ${car.name}`;
+            document.getElementById('modalCarName').textContent = car.name;
             document.getElementById('modalMainImg').src = car.thumbnail;
             document.getElementById('modalPrice').textContent = car.price;
             document.getElementById('modalYear').textContent = car.year;
