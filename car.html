@@ -64,15 +64,15 @@
                 <a href="#contact" class="hover:text-red-600 transition-colors">聯絡我們</a>
             </nav>
 
-            <!-- 右側按鈕群（手機版精簡文字不換行，電腦版維持完整） -->
+            <!-- 右側按鈕群（LINE 按鈕改為一致的 LINE 綠底白圖示，單行不換行） -->
             <div class="flex items-center space-x-1.5 sm:space-x-3 shrink-0">
                 <button onclick="loadGoogleSheetData()" class="inline-flex items-center space-x-1 sm:space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 px-2.5 sm:px-3 py-2 rounded-xl font-bold text-xs transition-all border border-slate-300 shadow-sm whitespace-nowrap" title="點擊立刻從 Google 試算表抓取最新資料">
                     <i class="fa-solid fa-rotate text-red-600"></i>
                     <span class="sm:hidden">同步</span>
                     <span class="hidden sm:inline">同步雲端資料</span>
                 </button>
-                <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="inline-flex items-center space-x-1.5 sm:space-x-2 bg-red-600 hover:bg-red-700 text-white px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-md shadow-red-600/20 whitespace-nowrap">
-                    <i class="fa-brands fa-line text-lg sm:text-xl text-[#06C755] bg-white rounded-md p-0.5 leading-none shrink-0"></i>
+                <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="inline-flex items-center space-x-1.5 sm:space-x-2 bg-[#06C755] hover:bg-[#05b34c] text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-md shadow-[#06C755]/25 whitespace-nowrap">
+                    <i class="fa-brands fa-line text-xl sm:text-2xl leading-none shrink-0"></i>
                     <span class="sm:hidden">諮詢</span>
                     <span class="hidden sm:inline">Line 諮詢</span>
                 </a>
@@ -208,7 +208,7 @@
                         </ul>
                     </div>
                     <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold py-3 rounded-xl text-center transition-colors flex items-center justify-center space-x-2.5">
-                        <i class="fa-brands fa-line text-[#06C755] text-xl sm:text-2xl"></i>
+                        <i class="fa-brands fa-line text-[#06C755] text-xl sm:text-2xl leading-none"></i>
                         <span>預約洗車服務</span>
                     </a>
                 </div>
@@ -228,8 +228,8 @@
                             <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-red-600"></i><span>奈米撥水漆面保護劑</span></li>
                         </ul>
                     </div>
-                    <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 rounded-xl text-center transition-colors flex items-center justify-center space-x-2.5 shadow-md shadow-red-600/30">
-                        <i class="fa-brands fa-line text-[#06C755] bg-white rounded-md p-0.5 leading-none text-xl sm:text-2xl"></i>
+                    <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="w-full bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-3.5 rounded-xl text-center transition-colors flex items-center justify-center space-x-2.5 shadow-md shadow-[#06C755]/30">
+                        <i class="fa-brands fa-line text-xl sm:text-2xl leading-none"></i>
                         <span>立即預約此方案</span>
                     </a>
                 </div>
@@ -248,7 +248,7 @@
                         </ul>
                     </div>
                     <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold py-3 rounded-xl text-center transition-colors flex items-center justify-center space-x-2.5">
-                        <i class="fa-brands fa-line text-[#06C755] text-xl sm:text-2xl"></i>
+                        <i class="fa-brands fa-line text-[#06C755] text-xl sm:text-2xl leading-none"></i>
                         <span>預約旗艦鍍膜諮詢</span>
                     </a>
                 </div>
@@ -277,7 +277,7 @@
                 <div>
                     <h4 class="text-white font-semibold text-sm uppercase mb-2">快速連結</h4>
                     <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="inline-flex items-center space-x-2 text-[#06C755] text-xs sm:text-sm font-bold hover:underline">
-                        <i class="fa-brands fa-line text-xl sm:text-2xl"></i>
+                        <i class="fa-brands fa-line text-xl sm:text-2xl leading-none"></i>
                         <span>Line 專人線上諮詢</span>
                     </a>
                 </div>
@@ -288,7 +288,7 @@
         </div>
     </footer>
 
-    <!-- Floating Line Button（RWD 放大且手機版維持適中內距不遮擋卡片文字） -->
+    <!-- Floating Line Button -->
     <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 bg-white hover:bg-slate-50 border-2 border-[#06C755] p-2.5 sm:p-3.5 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 group" aria-label="Line Contact">
         <i class="fa-brands fa-line text-[#06C755] text-3xl sm:text-4xl leading-none"></i>
     </a>
@@ -397,8 +397,8 @@
 
             <div class="p-4 sm:p-6 border-t border-slate-200 bg-white flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="text-xs sm:text-sm text-slate-500 text-center sm:text-left">喜歡這台車嗎？立即聯繫我們安排賞車！</div>
-                <a id="modalLineBtn" href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl transition-all flex items-center justify-center space-x-2.5 shadow-md shadow-red-600/30">
-                    <i class="fa-brands fa-line text-[#06C755] bg-white rounded-md p-0.5 leading-none text-xl sm:text-2xl"></i>
+                <a id="modalLineBtn" href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" class="w-full sm:w-auto bg-[#06C755] hover:bg-[#05b34c] text-white font-bold px-6 py-3 rounded-xl transition-all flex items-center justify-center space-x-2.5 shadow-md shadow-[#06C755]/30">
+                    <i class="fa-brands fa-line text-xl sm:text-2xl leading-none"></i>
                     <span>Line 預約賞車 / 詢價</span>
                 </a>
             </div>
@@ -722,8 +722,8 @@
                         <button onclick="openCarModal('${car.id}')" class="flex-grow bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm transition-colors text-center">
                             查看規格與照片 (${car.photos.length}張)
                         </button>
-                        <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" aria-label="Line 諮詢此車款" class="bg-[#06C755] hover:bg-[#05b34c] text-white px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl transition-colors flex items-center justify-center shadow-md shadow-[#06C755]/25 shrink-0">
-                            <i class="fa-brands fa-line text-xl sm:text-2xl leading-none"></i>
+                        <a href="https://line.me/ti/p/" onclick="this.href=MY_LINE_URL" target="_blank" aria-label="Line 諮詢此車款" title="Line 諮詢此車款" class="p-1.5 sm:p-2 text-[#06C755] hover:text-[#05b34c] transition-transform hover:scale-110 flex items-center justify-center shrink-0">
+                            <i class="fa-brands fa-line text-3xl sm:text-4xl leading-none"></i>
                         </a>
                     </div>
                 `;
